@@ -1,0 +1,198 @@
+,Race-ID,Race-Date,Race-Location,Constructor,Qualifying-Position,Position,DNF
+0,849,10/07/2011,"Silverstone, UK",HRT,24,19,No
+1,850,24/07/2011,"Nürburg, Germany",HRT,22,19,No
+2,851,31/07/2011,"Budapest, Hungary",HRT,22,18,No
+3,852,28/08/2011,"Spa, Belgium",HRT,23,23,Yes
+4,853,11/09/2011,"Monza, Italy",HRT,23,23,Yes
+5,854,25/09/2011,"Marina Bay, Singapore",HRT,23,19,No
+6,855,9/10/2011,"Suzuka, Japan",HRT,22,22,No
+7,856,16/10/2011,"Yeongam County, Korea",HRT,24,19,No
+8,857,30/10/2011,"Uttar Pradesh, India",HRT,23,18,No
+9,858,13/11/2011,"Abu Dhabi, UAE",HRT,20,23,Yes
+10,859,27/11/2011,"São Paulo, Brazil",HRT,22,20,No
+11,860,18/03/2012,"Melbourne, Australia",Toro Rosso,10,9,No
+12,861,25/03/2012,"Kuala Lumpur, Malaysia",Toro Rosso,15,12,No
+13,862,15/04/2012,"Shanghai, China",Toro Rosso,17,17,No
+14,863,22/04/2012,"Sakhir, Bahrain",Toro Rosso,6,15,No
+15,864,13/05/2012,"Montmeló, Spain",Toro Rosso,15,13,No
+16,865,27/05/2012,"Monte-Carlo, Monaco",Toro Rosso,15,23,Yes
+17,866,10/06/2012,"Montreal, Canada",Toro Rosso,14,14,No
+18,867,24/06/2012,"Valencia, Spain",Toro Rosso,17,11,No
+19,868,8/07/2012,"Silverstone, UK",Toro Rosso,12,13,No
+20,869,22/07/2012,"Hockenheim, Germany",Toro Rosso,11,13,No
+21,870,29/07/2012,"Budapest, Hungary",Toro Rosso,18,15,No
+22,871,2/09/2012,"Spa, Belgium",Toro Rosso,16,9,No
+23,872,9/09/2012,"Monza, Italy",Toro Rosso,14,12,No
+24,873,23/09/2012,"Marina Bay, Singapore",Toro Rosso,15,9,No
+25,874,7/10/2012,"Suzuka, Japan",Toro Rosso,14,10,No
+26,875,14/10/2012,"Yeongam County, Korea",Toro Rosso,21,9,No
+27,876,28/10/2012,"Uttar Pradesh, India",Toro Rosso,15,13,No
+28,877,4/11/2012,"Abu Dhabi, UAE",Toro Rosso,16,10,No
+29,878,18/11/2012,"Austin, USA",Toro Rosso,18,12,No
+30,879,25/11/2012,"São Paulo, Brazil",Toro Rosso,15,13,No
+31,880,17/03/2013,"Melbourne, Australia",Toro Rosso,14,23,Yes
+32,881,24/03/2013,"Kuala Lumpur, Malaysia",Toro Rosso,13,18,No
+33,882,14/04/2013,"Shanghai, China",Toro Rosso,7,7,No
+34,883,21/04/2013,"Sakhir, Bahrain",Toro Rosso,13,16,No
+35,884,12/05/2013,"Montmeló, Spain",Toro Rosso,11,10,No
+36,885,26/05/2013,"Monte-Carlo, Monaco",Toro Rosso,12,23,Yes
+37,886,9/06/2013,"Montreal, Canada",Toro Rosso,11,15,No
+38,887,30/06/2013,"Silverstone, UK",Toro Rosso,5,8,No
+39,888,7/07/2013,"Nürburg, Germany",Toro Rosso,6,12,No
+40,890,28/07/2013,"Budapest, Hungary",Toro Rosso,8,13,No
+41,891,25/08/2013,"Spa, Belgium",Toro Rosso,19,10,No
+42,892,8/09/2013,"Monza, Italy",Toro Rosso,7,7,No
+43,893,22/09/2013,"Marina Bay, Singapore",Toro Rosso,9,23,Yes
+44,894,6/10/2013,"Yeongam County, Korea",Toro Rosso,12,19,No
+45,895,13/10/2013,"Suzuka, Japan",Toro Rosso,16,13,No
+46,896,27/10/2013,"Uttar Pradesh, India",Toro Rosso,11,10,No
+47,897,3/11/2013,"Abu Dhabi, UAE",Toro Rosso,9,16,No
+48,898,17/11/2013,"Austin, USA",Toro Rosso,10,11,No
+49,899,24/11/2013,"São Paulo, Brazil",Toro Rosso,7,10,No
+50,900,16/03/2014,"Melbourne, Australia",Red Bull,2,23,Yes
+51,901,30/03/2014,"Kuala Lumpur, Malaysia",Red Bull,5,23,Yes
+52,902,6/04/2014,"Sakhir, Bahrain",Red Bull,13,4,No
+53,903,20/04/2014,"Shanghai, China",Red Bull,2,4,No
+54,904,11/05/2014,"Montmeló, Spain",Red Bull,3,3,No
+55,905,25/05/2014,"Monte-Carlo, Monaco",Red Bull,3,3,No
+56,906,8/06/2014,"Montreal, Canada",Red Bull,6,1,No
+57,907,22/06/2014,"Spielburg, Austria",Red Bull,5,8,No
+58,908,6/07/2014,"Silverstone, UK",Red Bull,8,3,No
+59,909,20/07/2014,"Hockenheim, Germany",Red Bull,5,6,No
+60,910,27/07/2014,"Budapest, Hungary",Red Bull,4,1,No
+61,911,24/08/2014,"Spa, Belgium",Red Bull,5,1,No
+62,912,7/09/2014,"Monza, Italy",Red Bull,9,5,No
+63,913,21/09/2014,"Marina Bay, Singapore",Red Bull,3,3,No
+64,914,5/10/2014,"Suzuka, Japan",Red Bull,6,4,No
+65,915,12/10/2014,"Sochi, Russia",Red Bull,6,7,No
+66,916,2/11/2014,"Austin, USA",Red Bull,5,3,No
+67,917,9/11/2014,"São Paulo, Brazil",Red Bull,9,23,Yes
+68,918,23/11/2014,"Abu Dhabi, UAE",Red Bull,20,4,No
+69,926,15/03/2015,"Melbourne, Australia",Red Bull,6,6,No
+70,927,29/03/2015,"Kuala Lumpur, Malaysia",Red Bull,4,10,No
+71,928,12/04/2015,"Shanghai, China",Red Bull,7,9,No
+72,929,19/04/2015,"Sakhir, Bahrain",Red Bull,7,6,No
+73,930,10/05/2015,"Montmeló, Spain",Red Bull,10,7,No
+74,931,24/05/2015,"Monte-Carlo, Monaco",Red Bull,4,5,No
+75,932,7/06/2015,"Montreal, Canada",Red Bull,9,13,No
+76,933,21/06/2015,"Spielburg, Austria",Red Bull,18,10,No
+77,934,5/07/2015,"Silverstone, UK",Red Bull,10,23,Yes
+78,936,26/07/2015,"Budapest, Hungary",Red Bull,4,3,No
+79,937,23/08/2015,"Spa, Belgium",Red Bull,5,23,Yes
+80,938,6/09/2015,"Monza, Italy",Red Bull,19,8,No
+81,939,20/09/2015,"Marina Bay, Singapore",Red Bull,2,2,No
+82,940,27/09/2015,"Suzuka, Japan",Red Bull,7,15,No
+83,941,11/10/2015,"Sochi, Russia",Red Bull,10,15,No
+84,942,25/10/2015,"Austin, USA",Red Bull,3,10,No
+85,943,1/11/2015,"Mexico City, Mexico",Red Bull,5,5,No
+86,944,15/11/2015,"São Paulo, Brazil",Red Bull,19,11,No
+87,945,29/11/2015,"Abu Dhabi, UAE",Red Bull,5,6,No
+88,948,20/03/2016,"Melbourne, Australia",Red Bull,8,4,No
+89,949,3/04/2016,"Sakhir, Bahrain",Red Bull,5,4,No
+90,950,17/04/2016,"Shanghai, China",Red Bull,2,4,No
+91,951,1/05/2016,"Sochi, Russia",Red Bull,5,11,No
+92,952,15/05/2016,"Montmeló, Spain",Red Bull,3,4,No
+93,953,29/05/2016,"Monte-Carlo, Monaco",Red Bull,1,2,No
+94,954,12/06/2016,"Montreal, Canada",Red Bull,4,7,No
+95,955,19/06/2016,"Baku, Azerbaijan",Red Bull,2,7,No
+96,956,3/07/2016,"Spielburg, Austria",Red Bull,5,5,No
+97,957,10/07/2016,"Silverstone, UK",Red Bull,4,4,No
+98,958,24/07/2016,"Budapest, Hungary",Red Bull,3,3,No
+99,959,31/07/2016,"Hockenheim, Germany",Red Bull,3,2,No
+100,960,28/08/2016,"Spa, Belgium",Red Bull,5,2,No
+101,961,4/09/2016,"Monza, Italy",Red Bull,6,5,No
+102,962,18/09/2016,"Marina Bay, Singapore",Red Bull,2,2,No
+103,963,2/10/2016,"Kuala Lumpur, Malaysia",Red Bull,4,1,No
+104,964,9/10/2016,"Suzuka, Japan",Red Bull,4,6,No
+105,965,23/10/2016,"Austin, USA",Red Bull,3,3,No
+106,966,30/10/2016,"Mexico City, Mexico",Red Bull,4,3,No
+107,967,13/11/2016,"São Paulo, Brazil",Red Bull,6,8,No
+108,968,27/11/2016,"Abu Dhabi, UAE",Red Bull,3,5,No
+109,969,26/03/2017,"Melbourne, Australia",Red Bull,0,23,Yes
+110,970,9/04/2017,"Shanghai, China",Red Bull,5,4,No
+111,971,16/04/2017,"Sakhir, Bahrain",Red Bull,4,5,No
+112,972,30/04/2017,"Sochi, Russia",Red Bull,5,23,Yes
+113,973,14/05/2017,"Montmeló, Spain",Red Bull,6,3,No
+114,974,28/05/2017,"Monte-Carlo, Monaco",Red Bull,5,3,No
+115,975,11/06/2017,"Montreal, Canada",Red Bull,6,3,No
+116,976,25/06/2017,"Baku, Azerbaijan",Red Bull,10,1,No
+117,977,9/07/2017,"Spielburg, Austria",Red Bull,4,3,No
+118,978,16/07/2017,"Silverstone, UK",Red Bull,19,5,No
+119,979,30/07/2017,"Budapest, Hungary",Red Bull,6,23,Yes
+120,980,27/08/2017,"Spa, Belgium",Red Bull,6,3,No
+121,981,3/09/2017,"Monza, Italy",Red Bull,16,4,No
+122,982,17/09/2017,"Marina Bay, Singapore",Red Bull,3,2,No
+123,983,1/10/2017,"Kuala Lumpur, Malaysia",Red Bull,4,3,No
+124,984,8/10/2017,"Suzuka, Japan",Red Bull,3,3,No
+125,985,22/10/2017,"Austin, USA",Red Bull,4,23,Yes
+126,986,29/10/2017,"Mexico City, Mexico",Red Bull,16,23,Yes
+127,987,12/11/2017,"São Paulo, Brazil",Red Bull,14,6,No
+128,988,26/11/2017,"Abu Dhabi, UAE",Red Bull,4,23,Yes
+129,989,25/03/2018,"Melbourne, Australia",Red Bull,8,4,No
+130,990,8/04/2018,"Sakhir, Bahrain",Red Bull,4,23,Yes
+131,991,15/04/2018,"Shanghai, China",Red Bull,6,1,No
+132,992,29/04/2018,"Baku, Azerbaijan",Red Bull,4,23,Yes
+133,993,13/05/2018,"Montmeló, Spain",Red Bull,6,5,No
+134,994,27/05/2018,"Monte-Carlo, Monaco",Red Bull,1,1,No
+135,995,10/06/2018,"Montreal, Canada",Red Bull,6,4,No
+136,996,24/06/2018,"Le Castellet, France",Red Bull,5,4,No
+137,997,1/07/2018,"Spielburg, Austria",Red Bull,7,23,Yes
+138,998,8/07/2018,"Silverstone, UK",Red Bull,6,5,No
+139,999,22/07/2018,"Hockenheim, Germany",Red Bull,20,23,Yes
+140,1000,29/07/2018,"Budapest, Hungary",Red Bull,12,4,No
+141,1001,26/08/2018,"Spa, Belgium",Red Bull,8,23,Yes
+142,1002,2/09/2018,"Monza, Italy",Red Bull,19,23,Yes
+143,1003,16/09/2018,"Marina Bay, Singapore",Red Bull,6,6,No
+144,1004,30/09/2018,"Sochi, Russia",Red Bull,18,6,No
+145,1005,7/10/2018,"Suzuka, Japan",Red Bull,15,4,No
+146,1006,21/10/2018,"Austin, USA",Red Bull,4,23,Yes
+147,1007,28/10/2018,"Mexico City, Mexico",Red Bull,1,23,Yes
+148,1008,11/11/2018,"São Paulo, Brazil",Red Bull,11,4,No
+149,1009,25/11/2018,"Abu Dhabi, UAE",Red Bull,5,4,No
+150,1010,17/03/2019,"Melbourne, Australia",Renault,12,23,Yes
+151,1011,31/03/2019,"Sakhir, Bahrain",Renault,10,23,Yes
+152,1012,14/04/2019,"Shanghai, China",Renault,7,7,No
+153,1013,28/04/2019,"Baku, Azerbaijan",Renault,10,23,Yes
+154,1014,12/05/2019,"Montmeló, Spain",Renault,13,12,No
+155,1015,26/05/2019,"Monte-Carlo, Monaco",Renault,6,9,No
+156,1016,9/06/2019,"Montreal, Canada",Renault,4,6,No
+157,1017,23/06/2019,"Le Castellet, France",Renault,8,11,No
+158,1018,30/06/2019,"Spielburg, Austria",Renault,12,12,No
+159,1019,14/07/2019,"Silverstone, UK",Renault,7,7,No
+160,1020,28/07/2019,"Hockenheim, Germany",Renault,13,23,Yes
+161,1021,4/08/2019,"Budapest, Hungary",Renault,20,14,No
+162,1022,1/09/2019,"Spa, Belgium",Renault,10,14,No
+163,1023,8/09/2019,"Monza, Italy",Renault,5,4,No
+164,1024,22/09/2019,"Marina Bay, Singapore",Renault,20,14,No
+165,1025,29/09/2019,"Sochi, Russia",Renault,10,23,Yes
+166,1026,13/10/2019,"Suzuka, Japan",Renault,16,23,Yes
+167,1027,27/10/2019,"Mexico City, Mexico",Renault,13,8,No
+168,1028,3/11/2019,"Austin, USA",Renault,9,6,No
+169,1029,17/11/2019,"São Paulo, Brazil",Renault,11,6,No
+170,1030,1/12/2019,"Abu Dhabi, UAE",Renault,7,11,No
+171,1031,5/07/2020,"Spielburg, Austria",Renault,10,23,Yes
+172,1032,12/07/2020,"Spielburg, Austria",Renault,8,8,No
+173,1033,19/07/2020,"Budapest, Hungary",Renault,11,8,No
+174,1034,2/08/2020,"Silverstone, UK",Renault,8,4,No
+175,1035,9/08/2020,"Silverstone, UK",Renault,5,14,No
+176,1036,16/08/2020,"Montmeló, Spain",Renault,13,11,No
+177,1037,30/08/2020,"Spa, Belgium",Renault,4,4,No
+178,1038,6/09/2020,"Monza, Italy",Renault,7,6,No
+179,1039,13/09/2020,"Mugello, Italy",Renault,8,4,No
+180,1040,27/09/2020,"Sochi, Russia",Renault,5,5,No
+181,1041,11/10/2020,"Nürburg, Germany",Renault,6,3,No
+182,1042,25/10/2020,"Portimão, Portugal",Renault,10,9,No
+183,1043,1/11/2020,"Imola, Italy",Renault,5,3,No
+184,1044,15/11/2020,"Istanbul, Turkey",Renault,5,10,No
+185,1045,29/11/2020,"Sakhir, Bahrain",Renault,6,7,No
+186,1046,6/12/2020,"Sakhir, Bahrain",Renault,7,5,No
+187,1047,13/12/2020,"Abu Dhabi, UAE",Renault,11,7,No
+188,1052,28/03/2021,"Sakhir, Bahrain",McLaren,6,7,No
+189,1053,18/04/2021,"Imola, Italy",McLaren,6,6,No
+190,1054,2/05/2021,"Portimão, Portugal",McLaren,16,9,No
+191,1055,9/05/2021,"Montmeló, Spain",McLaren,7,6,No
+192,1056,23/05/2021,"Monte-Carlo, Monaco",McLaren,12,12,No
+193,1057,6/06/2021,"Baku, Azerbaijan",McLaren,13,9,No
+194,1059,20/06/2021,"Le Castellet, France",McLaren,10,6,No
+195,1058,27/06/2021,"Spielburg, Austria",McLaren,13,13,No
+196,1060,4/07/2021,"Spielburg, Austria",McLaren,13,7,No
