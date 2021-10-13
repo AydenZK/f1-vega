@@ -11,18 +11,21 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
         
     </head>
-
+    <h1>Formula 1: Daniel Ricciardo Analysis</h1>
+    <h4>A dashboard of visualisation exploring the Formula 1 career of Daniel Ricciardo</h4>
+    <p>Daniel Ricciardo is one of Australia's most famous and successful Formula 1 (F1) drivers to date. He arguably reached his prime years ago, however, given the context of F1, a driver's performance is inevitably tied to the performance of their car and technology. Thus, these dashboards aim to analyse his rise to fame as well as his tumultuous prime.</p>
     <body>
         <div id="scatter_plot"></div>
 
         <script type="text/javascript">
-            var spec2 = "scatter_plot.vg.json";
+            var spec2 = "vega/bubble_by_constructor.json";
             vegaEmbed('#scatter_plot', spec2).then(function(result) {
                 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
             }).catch(console.error);
         </script>
 
         <br>
+        <p>The above bubble chart is the perfect idiom to visualise Daniel’s performance difference in relation to time and constructors which are two very important variables in the f1 world. There has been widespread debate and speculation around Ricciardo’s performances at his new team where fans are left wondering if it is the new constructor or just Daniel becoming older. This visualisation aims to display Ricciardo’s dominance despite constructor as well as comparing the various constructors.</p>
         <br>
         <br>
         <br>
@@ -30,11 +33,13 @@
         <div id="symbol_map"></div>
             
         <script type="text/javascript">
-            var spec2 = "vega.json";
+            var spec2 = "vega/map_top5s.json";
             vegaEmbed('#symbol_map', spec2).then(function(result) {
                 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
             }).catch(console.error);
         </script>
+
+        <p>The above is a perfect way to visualise where Daniel seems to dominate, and the size of each mark is directly comparable to his scale of skill in each track around the world. As you can see, he tends to be far more successful in Europe which is displayed perfectly by this idiom with the cluster of large circles in the Europe area.</p>
     </body>
 
 </html>
