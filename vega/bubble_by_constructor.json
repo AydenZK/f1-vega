@@ -1,98 +1,99 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 1200,
-    "height": 600,
-    "title": "Danieal Ricciardo Results by Constructor",
+    "width": 1000,
+    "height": 400,
+    "title": {
+        "text": "Daniel Ricciardo Results by Constructor",
+        "fontSize": 20
+    },
     "data": {
       "url": "data/DR_all_races.csv"
     },
-    "params":[
-        {
-        "name": "constructor_highlight",
-        "select": {"type": "point", "fields": ["Constructor"]},
-        "bind": "legend"
-        }, 
-        {
-            "name": "Choose_Constructor",
-            "bind": {
-                "input": "select",
-                "options": [
-                    null,
-                    "HRT",
-                    "McLaren",
-                    "Red Bull",
-                    "Renault",
-                    "Toro Rosso"
-                ],
-                "labels":[
-                    "Show All",
-                    "HRT",
-                    "McLaren",
-                    "Red Bull",
-                    "Renault",
-                    "Toro Rosso"
-                ]
-            }
-        }
+    "params": [
+        {"name": "Pos_Below", "value": 25, "bind": {"input": "range", "min": 0, "max": 25, "step": 1, "name": "Maximum Position: "}},    
+        {"name": "Include_DNF", "value": true ,"bind": {"input": "checkbox", "name": "Include DNF: "}}
     ],
     "transform": [
-        {"filter": "Choose_Constructor == null || datum.Constructor == Choose_Constructor"}
+        {"window": [{"field": "Position", "op": "mean", "as": "rolling_mean"}]},
+        {"filter": "datum.Position < Pos_Below"},
+        {"filter": "Include_DNF ? datum.Position < 24 : datum.Position < 23"}
     ],
-    "mark": "circle",
     "encoding": {
         "x": {
-            "field": "Race-Date",
+            "field": "Date",
             "type": "temporal"
         },
-        "y": {
-            "field": "Position",
-            "type": "quantitative",
-            "scale": {
-                "reverse": true
-            }
-        },
-        "color": {
-            "field": "Constructor",
-            "type": "nominal",
-            "scale": {
-                "domain": [
-                    "HRT",
-                    "McLaren",
-                    "Red Bull",
-                    "Renault",
-                    "Toro Rosso"
-                ],
-                "range": [
-                    "#fa64d3",
-                    "#ff7f00",
-                    "#e41a1c",
-                    "#dfdf20",
-                    "#377eb8"
+        "y": {"type": "quantitative", "axis": {"title": "Position and Rolling Mean"}}
+    },
+    "layer": [
+        {
+            "mark": "circle",
+            "params": [
+                {"name": "grid", "select": "interval", "bind": "scales"},
+                {"name": "con_select", "select": {"type": "point", "fields":["Constructor"]}, "bind": "legend"}          
+            ],
+            "encoding": {
+                "y": {
+                    "field": "Position",
+                    "type": "quantitative",
+                    "scale": {
+                        "reverse": true
+                    }
+                },
+                "color": {
+                    "field": "Constructor",
+                    "type": "nominal",
+                    "scale": {
+                        "domain": [
+                            "HRT",
+                            "McLaren",
+                            "Red Bull",
+                            "Renault",
+                            "Toro Rosso"
+                        ],
+                        "range": [
+                            "#fa64d3",
+                            "#ff7f00",
+                            "#e41a1c",
+                            "#dfdf20",
+                            "#377eb8"
+                        ]
+                    },
+                    "legend": {
+                        "labelFontSize":18,
+                        "titleFontSize": 18,
+                        "padding": 10
+                    }
+                },
+                "opacity": {
+                    "condition": {"param": "con_select", "value": 0.8},
+                    "value": 0.2
+                },
+                "size": {
+                    "field": "Qualifying-Position",
+                    "type": "quantitative",
+                    "scale": {
+                        "reverse": true,
+                        "type": "threshold",
+                        "domain": [3.01, 10, 15, 20],
+                        "range": [50, 100, 400, 600]
+                    }
+                },
+                "tooltip": [
+                    {"field": "Date", "type": "temporal"},
+                    {"field": "Race-Location", "type": "nominal"},
+                    {"field": "Constructor", "type": "nominal"},
+                    {"field": "Qualifying-Position", "type": "quantitative"},
+                    {"field": "Position", "type": "quantitative"},
+                    {"field": "DNF", "type": "nominal"}
                 ]
             }
-        
         },
-        "opacity": {
-            "condition": {"param": "constructor_highlight", "value": 0.6},
-            "value": 0.2
-        },
-        "size": {
-            "field": "Qualifying-Position",
-            "type": "quantitative",
-            "scale": {
-                "reverse": true,
-                "type": "threshold",
-                "domain": [3.01, 10, 15, 20],
-                "range": [50, 100, 400, 600]
-            }
-        },
-        "tooltip": [
-            {"field": "Race-Date", "type": "temporal"},
-            {"field": "Race-Location", "type": "nominal"},
-            {"field": "Constructor", "type": "nominal"},
-            {"field": "Qualifying-Position", "type": "quantitative"},
-            {"field": "Position", "type": "quantitative"},
-            {"field": "DNF", "type": "nominal"}
-        ]
-    }
+        {
+            "mark": {"type": "line", "size": 1, "color": "black"},
+            "encoding": {
+                "y": {"field": "rolling_mean", "title": "Rolling Mean of Position"}
+              }
+        }
+    ]
 }

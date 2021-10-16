@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 1200,
-    "height": 600,
-    "title": "Daniel Ricciardo Number of Top 5 F1 Finishes",
+    "width": 1000,
+    "height": 500,
+    "title": "Top 5 Finishes",
     "projection": {"type": "equalEarth"},
     "layer": [
         {
@@ -14,17 +14,41 @@
         },
         {
             "data": {
-                "url": "data/ric_top5s.csv"
+                "url": "data/top5s_map.csv"
             },
-            "mark": {"type": "circle", "tooltip": {"content": "data"}},
+            "mark": {"type": "circle"},
             "encoding": {
-                "longitude": {"field": "longitude", "type": "quantitative"},
-                "latitude": {"field": "latitude", "type": "quantitative"},
+                "longitude": {"field": "Longitude", "type": "quantitative"},
+                "latitude": {"field": "Latitude", "type": "quantitative"},
+                "color": {
+                    "field": "Most-Successful-Constructor",
+                    "type": "nominal",
+                    "scale": {
+                        "domain": [
+                            "McLaren",
+                            "Red Bull",
+                            "Renault"
+                        ],
+                        "range": [
+                            "#ff7f00",
+                            "#e41a1c",
+                            "#dfdf20"
+                        ]
+                    }
+                },
                 "size": {
-                    "field": "count",
+                    "field": "Top-5s",
                     "type": "quantitative",
-                    "scale": {"domain": [1, 5]}
-                }
+                    "scale": {
+                        "domain": [1, 5],
+                        "range": [100,400,900,1600,2500]
+                    }
+                },
+                "tooltip": [
+                    {"field": "Location", "type": "nominal"},
+                    {"field": "Most-Successful-Constructor", "type": "nominal"},
+                    {"field": "Top-5s", "type": "quantitative"}
+                ]
             }
         }
     ]
