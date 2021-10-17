@@ -1,0 +1,151 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 650,
+    "height": 400,
+    "title": {
+        "text": "Daniel Ricciardo Podium Count vs Rivals",
+        "fontSize": 20
+    },
+    "data": {
+      "url": "data/podiums.csv"
+    },
+    "layer": [
+        {
+            "mark": "line",
+            "encoding": {
+                "x": {
+                    "field": "Date", 
+                    "type": "quantitative",
+                    "axis": {
+                        "tickCount": 8,
+                        "format": "F"
+                    }
+                },
+                "y": {
+                    "field": "Podiums", 
+                    "type": "quantitative"
+                },
+                "color": {
+                    "field": "Driver", 
+                    "type": "nominal",
+                    "scale": {
+                        "domain": [
+                            "Daniel Ricciardo",
+                            "Lewis Hamilton",
+                            "Max Verstappen"
+                        ],
+                        "range": [
+                            "#ff7f00",
+                            "#03bfb5",                            
+                            "#e41a1c"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "mark": {"type": "circle","size": 100},
+            "encoding": {
+                "x": {
+                    "field": "Date", 
+                    "type": "quantitative",
+                    "axis": {
+                        "tickCount": 8,
+                        "format": "F"
+                    }
+                },
+                "y": {
+                    "field": "Podiums", 
+                    "type": "quantitative"
+                },
+                "color": {
+                    "field": "Driver", 
+                    "type": "nominal",
+                    "scale": {
+                        "domain": [
+                            "Daniel Ricciardo",
+                            "Lewis Hamilton",
+                            "Max Verstappen"
+                        ],
+                        "range": [
+                            "#ff7f00",
+                            "#03bfb5",                            
+                            "#e41a1c"
+                        ]
+                    },
+                    "legend": null
+                },
+                "tooltip": [
+                    {"field": "Date", "type": "quantitative"},
+                    {"field": "Driver", "type": "nominal"},
+                    {"field": "Constructor", "type": "nominal"},
+                    {"field": "Podiums", "type": "quantitative"}
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "dx": 60,
+                "dy": 235,
+                "angle": 325,
+                "fontSize": 13
+            },
+            "encoding": {
+                "text": {"field": "Constructor", "type": "nominal"},
+                "color": {"value": "#dfdf20"},
+                "opacity": {
+                "condition": {
+                        "test": "datum['Driver'] == 'Daniel Ricciardo' & datum['Date'] == 2019",
+                        "value": 1
+                    },
+                    "value": 0
+                } 
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "dx": 330,
+                "dy": 140,
+                "fontSize": 13
+            },
+            "encoding": {
+                "text": {"field": "Constructor", "type": "nominal"},
+                "color": {"value": "#ff7f00"},
+                "opacity": {
+                "condition": {
+                        "test": "datum['Driver'] == 'Daniel Ricciardo' & datum['Date'] == 2021",
+                        "value": 1
+                    },
+                    "value": 0
+                } 
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "dx": -265,
+                "dy": 15,
+                "fontSize": 13
+            },
+            "encoding": {
+                "text": {"field": "Constructor", "type": "nominal"},
+                "color": {"value": "#e41a1c"},
+                "opacity": {
+                "condition": {
+                        "test": "datum['Driver'] == 'Daniel Ricciardo' & datum['Date'] == 2014",
+                        "value": 1
+                    },
+                    "value": 0
+                } 
+            }
+        }
+    ]
+}

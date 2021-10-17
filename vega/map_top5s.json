@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 1000,
     "height": 500,
-    "title": "Top 5 Finishes",
+    "title": {"text": "Top 5 Finishes", "fontSize": 20},
     "projection": {"type": "equalEarth"},
     "layer": [
         {
@@ -17,6 +17,9 @@
                 "url": "data/top5s_map.csv"
             },
             "mark": {"type": "circle"},
+            "params": [
+                {"name": "con_select", "select": {"type": "point", "fields":["Most-Successful-Constructor"]}, "bind": "legend"}          
+            ],
             "encoding": {
                 "longitude": {"field": "Longitude", "type": "quantitative"},
                 "latitude": {"field": "Latitude", "type": "quantitative"},
@@ -34,7 +37,19 @@
                             "#e41a1c",
                             "#dfdf20"
                         ]
+                    },
+                    "legend": {
+                        "labelFontSize":18,
+                        "titleFontSize": 18,
+                        "direction": "vertical",
+                        "orient": "bottom-left",
+                        "symbolSize": 300,
+                        "title": "Constructor"
                     }
+                },
+                "opacity": {
+                    "condition": {"param": "con_select", "value": 0.6},
+                    "value": 0.05
                 },
                 "size": {
                     "field": "Top-5s",
@@ -42,6 +57,9 @@
                     "scale": {
                         "domain": [1, 5],
                         "range": [100,400,900,1600,2500]
+                    },
+                    "legend": {
+                        "orient": "top-left"
                     }
                 },
                 "tooltip": [

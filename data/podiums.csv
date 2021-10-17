@@ -1,4 +1,6 @@
-Year,Driver,Constructor,Podiums
+Date,Driver,Constructor,Podiums
+2014,Max Verstappen,Red Bull,0
+2015,Max Verstappen,Red Bull,0
 2014,Daniel Ricciardo,Red Bull,8
 2014,Lewis Hamilton,Mercedes,16
 2015,Daniel Ricciardo,Red Bull,2
@@ -14,6 +16,7 @@ Year,Driver,Constructor,Podiums
 2018,Max Verstappen,Red Bull,11
 2019,Lewis Hamilton,Mercedes,17
 2019,Max Verstappen,Red Bull,9
+2019,Daniel Ricciardo,Renault,0
 2020,Daniel Ricciardo,Renault,2
 2020,Lewis Hamilton,Mercedes,14
 2020,Max Verstappen,Red Bull,11

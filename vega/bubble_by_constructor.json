@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 1000,
+    "width": 1100,
     "height": 400,
     "title": {
         "text": "Daniel Ricciardo Results by Constructor",
@@ -60,9 +60,12 @@
                         ]
                     },
                     "legend": {
-                        "labelFontSize":18,
+                        "labelFontSize":15,
                         "titleFontSize": 18,
-                        "padding": 10
+                        "direction": "horizontal",
+                        "orient": "bottom-left",
+                        "symbolSize": 300,
+                        "offset": -70
                     }
                 },
                 "opacity": {
@@ -77,6 +80,11 @@
                         "type": "threshold",
                         "domain": [3.01, 10, 15, 20],
                         "range": [50, 100, 400, 600]
+                    },
+                    "legend": {
+                        "orient": "top-left",
+                        "direction": "horizontal",
+                        "columns": 2
                     }
                 },
                 "tooltip": [
@@ -90,10 +98,14 @@
             }
         },
         {
-            "mark": {"type": "line", "size": 1, "color": "black"},
+            "mark": {"type": "line", "size": 2, "color": "black"},
             "encoding": {
-                "y": {"field": "rolling_mean", "title": "Rolling Mean of Position"}
+                "y": {"field": "rolling_mean", "title": "Rolling Mean of Position"},
+                "tooltip": [
+                    {"field": "Date", "type": "temporal"},
+                    {"field": "rolling_mean", "type": "quantitative", "title": "Rolling Mean"}
+                ]
               }
-        }
+        }           
     ]
 }

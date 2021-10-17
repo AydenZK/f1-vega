@@ -1,0 +1,76 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {"text": "Teammate Comparison", "fontSize": 20},
+    "width": 730, 
+    "height": 400,
+    "data": {"url": "data/teammates2.csv"},
+    "layer": [
+        {
+            "mark": "area",
+            "encoding": {
+                "x": {
+                    "timeUnit": "yearmonth", 
+                    "field": "Year",
+                    "axis": {"format": "%Y"}
+                },
+                "y": {
+                    "aggregate": "sum", "field": "Wins"
+                },
+                "color": {
+                    "field": "Driver",
+                    "scale": {
+                        "domain": [
+                            "Daniel Ricciardo",
+                            "Teammate"
+                        ],
+                        "range": [
+                            "#6DE4D1",
+                            "#E46D7F"
+                        ]
+                    },
+                    "legend": {
+                        "orient": "top-left",
+                        "direction": "horizontal",
+                        "gridAlign": "each",
+                        "offset": 5
+                    }
+                },
+                "opacity": {"value": 0.7}
+            }
+        },
+        {
+            "mark": {"type": "point","size": 80},
+            "encoding": {
+                "x": {
+                    "timeUnit": "yearmonth", 
+                    "field": "Year",
+                    "axis": {"format": "%Y"}
+                },
+                "y": {
+                    "aggregate": "sum", "field": "Dan_total"
+                },
+                "color": {
+                    "field": "Driver",
+                    "scale": {
+                        "domain": [
+                            "Daniel Ricciardo",
+                            "Teammate"
+                        ],
+                        "range": [
+                            "#6DE4D1",
+                            "#E46D7F"
+                        ]
+                    }
+                },
+                "tooltip": [
+                    {"field": "Name", "type": "nominal", "title": "Driver"},
+                    {"field": "Year", "type": "temporal"},
+                    {"field": "Constructor", "type": "nominal"},
+                    {"field": "Wins", "type": "quantitative"}
+                ]
+            }
+        }
+    ]
+    
+  }
+  

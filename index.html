@@ -6,40 +6,144 @@
         <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
         <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
         
-        
+        <!-- Import pure.css -->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
         <!-- CSS file -->
         <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
         
     </head>
-    <h1>Formula 1: Daniel Ricciardo Analysis</h1>
-    <h4>A dashboard of visualisation exploring the Formula 1 career of Daniel Ricciardo</h4>
-    <p>Daniel Ricciardo is one of Australia's most famous and successful Formula 1 (F1) drivers to date. He arguably reached his prime years ago, however, given the context of F1, a driver's performance is inevitably tied to the performance of their car and technology. Thus, these dashboards aim to analyse his rise to fame as well as his tumultuous prime.</p>
     <body>
-        <div id="scatter_plot"></div>
+        <div class="page">
+            <!-- pure grid group -->
+            <div class="pure-g">
+                <div class="pure-u-1-1">
+                    <h1>The Career of an F1 Honey Badger</h1>
+                    <p class="subtitle">A dashboard visualising the ongoing Formula 1 career of Australian driver: Daniel Ricciardo</p>
+                </div>
+            </div>
+            <!-- end pure grid group -->
 
-        <script type="text/javascript">
-            var spec2 = "vega/bubble_by_constructor.json";
-            vegaEmbed('#scatter_plot', spec2).then(function(result) {
-                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-            }).catch(console.error);
-        </script>
+            <!-- pure grid group -->
+            <div class="pure-g">
+                <div class="pure-u-1-4">
+                    <div class="description description-left">
+                        <h2>5 Teams, 10 Years</h2>
+                        <div class="para1">
+                            <p>As of October 2021, Daniel Ricciardo is widely regarded as one of the most popular Australian Formula 1 drivers in the sport's 70 year history. In his younger years, he was seen as a definite championship contender, but a reputation for team-swtiching in the past few years alongisde a flurry of lacklaster results at <span class="mcl" styles>McLaren</span> in 2021 - has many questioning whether the Honey Badger "has still got it".</p>
+                            <p>Within his decade-long career, Ricciardo has spent his time accross five seperate teams - most notably: <span class='rb'>Red Bull Racing</span>, where he very much grew up and was the poster boy for the team and even the entire F1.</p>
+                            <p>Many fans, with the power of hindsight, condemn Ricciardo's shock decision to move to <span class='ren'>Renault</span> in 2019, attributing his poor post-2018 performance to the poor constructors</p>
+                            <p>The chart on the right, displays all of Ricciardo's races even from his beginnings at <span class='hrt'>HRT</span> and <span class='tor'>Toro Rosso</span>, up until his performance now. Looking at the general trend over the past few years, he very much seems to have somewhat stagnated, but the alleged "drop" in performance very well may be a media exaggeration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pure-u-3-4">
+                    <div id="chart1" class="vis-container"></div>
+                </div>
+            </div>
+            <!-- end pure grid group -->
 
-        <br>
-        <p>The above bubble chart is the perfect idiom to visualise Daniel’s performance difference in relation to time and constructors which are two very important variables in the f1 world. There has been widespread debate and speculation around Ricciardo’s performances at his new team where fans are left wondering if it is the new constructor or just Daniel becoming older. This visualisation aims to display Ricciardo’s dominance despite constructor as well as comparing the various constructors.</p>
-        <br>
-        <br>
-        <br>
-        
-        <div id="symbol_map"></div>
+            <!-- pure grid group -->
+            <div class="pure-g">
+                <div class="pure-u-2-3">
+                <div id="chart2"  class="vis-container"></div>
+                </div>
+                <div class="pure-u-1-3">
+                <div class="description description-right">
+                    <h2>A worldwide sensation</h2>
+                    <p>Formula One, known for it's blinding speeds, daredevil drivers and beautiful tracks all around the world present new challenges and ever-changing environments to each team and driver throughout their career. The following is an exploration of Ricciardo's dominance in different parts of the world. The size of the mark represents how often Ricciardo has placed in the top 5 relative to the track, whereas the colour displays with which constructor Ricciardo has had the most success per track. </p>
+                    <p>As can be seen the data is largely skewed in favour of his <span class="rb">Red Bull</span> days, likely due to the fact he spent half his career with them.</p>
+                </div>
+                </div>
             
+            </div>
+            <!-- end pure grid group -->
+
+            <!-- pure grid group -->
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <div id="chart3" class="vis-container"></div>
+                                     
+        
+                </div>
+                <div class="pure-u-1-2">
+                    <div id="chart4" class="vis-container"></div>
+                </div>
+                
+            </div>
+
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <div class="description description-left1">
+                        <h2>An Obvious Relative Dip</h2>
+                        <div class="para3">
+                            <p>Ricciardo's career has largely been overshadowed by the absolute dominance of <span class="merc">Mercedes</span> and <span class="merc">Lewis Hamilton</span> in the past 7 years, with 7 constructor's championships as well as 7 driver's championship. Lewis as the benchmark, we see that Daniel wasn't far off in 2016 and 2017 as he seemingly put up a fight against the champ. </p>
+                            <p>However, a fairer compairson can be made between Ricciardo and his teenage sensation teammate between 2016-2018: <span class="rb">Max Verstappen</span>. We see that by 2018, Max has started to outshine Daniel, arguably a product of team favouring. Nevertheless, the move to <span class='ren'>Renault</span> in 2019 as seen on the graph, rightfully seemed to do very little for his post-2017 decline. </p>
+                            <p>Now at <span class="mcl">McLaren</span>, just halfway into the year, Ricciardo has already mustered the same amount of podiums as the two forgetable years with <span class='ren'>Renault</span> as fans can finally start being optimistic for the return of the Honey Badger.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pure-u-1-2">
+                    <div class="description description-right1">
+                        <h2>A Comparison of Skill</h2>
+                        <div class='para3'>
+                        <p>Due to the large impbalance between constructor budgets and technologies, they say, the fairest measure of your skill as an F1 driver can be seen from how you stack up against your teammate - who is undoubtedly racing with all the same equipment that you have.</p>
+                        <p>Ricciardo has had the pleasure (...or displeasure) of racing with past and future superstars of Formula One as teammates. Amongst these, are notably, <span class='rb'>Sebastian Vettel (2014)</span>, <span class='rb'>Max Verstappen (2015-2018)</span> and now <span class='mcl'>Lando Norris (2021-)</span>.</p>
+                        <p>The area chart displays the amount of times Daniel <span style="color:#6DE4D1">has gotten the better of a teammate</span> in a race as opposed to when <span style="color:#E46D7F">his teammate has gotten the better of him</span>.</p>
+                        <p>2016-2018 beautifully display the rise of <span class='rb'>Verstappen</span> against the fall of Daniel. 2018-2020 sees Daniel mostly having the better of his teammates at <span class='ren'>Renault</span>. And laslty, we see that Daniel has a problem on his hands this year in dealing with <span class="mcl">Norris</span>.</p>
+                        <p style="font-size:12px">See the mark tooltips for detailed info!</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end pure grid group -->
+            <div class="pure-g">
+                <div class="pure-u-1-1 small-font">
+                    <p>This dashboard is created by Ayden Khalil. The datasource can be found <a href="#"" target="_blank">here</href></p>
+                </div>
+            </div>    
+            <div class="image_container">
+                <img src="images/verstappen.svg" alt="ver ss", class="img_ver", height="70", width="70">
+                <img src="images/hamilton.svg" alt="Ham ss", class="img_ham", height="70", width="70">
+                <img src="images/ricciardo.svg" alt="Ric ss", class="img_ric", height="70", width="70">
+            </div>
+            
+
+        </div> <!-- end page -->
+        
         <script type="text/javascript">
+            var spec1 = "vega/bubble_by_constructor.json";
             var spec2 = "vega/map_top5s.json";
-            vegaEmbed('#symbol_map', spec2).then(function(result) {
+            var spec3 = "vega/podiums.json";
+            var spec4 = "vega/teammates.json";
+            
+            vegaEmbed('#chart1', spec1).then(function(result) {
                 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
             }).catch(console.error);
+
+            
+            vegaEmbed('#chart2', spec2).then(function(result) {
+                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            }).catch(console.error);
+
+            vegaEmbed('#chart3', spec3).then(function(result) {
+                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            }).catch(console.error);
+            
+            vegaEmbed('#chart4', spec4).then(function(result) {
+                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            }).catch(console.error);
+
         </script>
 
-        <p>The above is a perfect way to visualise where Daniel seems to dominate, and the size of each mark is directly comparable to his scale of skill in each track around the world. As you can see, he tends to be far more successful in Europe which is displayed perfectly by this idiom with the cluster of large circles in the Europe area.</p>
+        
     </body>
 
 </html>
